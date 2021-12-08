@@ -1,12 +1,12 @@
 # TestFramework
-Execution:
+##Execution:
     - From the IDE: just run main class -> framework.Main
     - From CMD:
         - Build project 'mvn clean package'
         - Inside target folder, execute 'java -jar AkamaiTestFramework.jar'
     - Test results from executions could be found under results folder.
 
-Additional parameters:
+##Additional parameters:
     - Without passing any parameter, default suite will be executed on CHROME browser
     - Browser type [firefox, chrome, edge] could be specified by passing -Dbrowser={} parameter
         -Dbrowser=firefox
@@ -17,7 +17,7 @@ Additional parameters:
         -Dtests=UnloggedCustomerSearchJobTest
         -Dtests=NoJobsFoundNotificationTest;UnloggedCustomerSearchJobTest
         
-Execution commands examples:
+##Execution commands examples:
     1) java -jar AkamaiTestFramework.jar --> executes default suite and default browser
     2) java -jar -Dbrowser=firefox AkamaiTestFramework.jar --> executes default suite on FIREFOX
     3) java -jar -Dbrowser=edge -Dtests=NoJobsFoundNotificationTest AkamaiTestFramework.jar --> executes NoJobsFoundNotificationTest on EDGE
