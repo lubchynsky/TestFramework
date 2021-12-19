@@ -17,9 +17,12 @@
         -Dtests=NoJobsFoundNotificationTest
         -Dtests=UnloggedCustomerSearchJobTest
         -Dtests=NoJobsFoundNotificationTest;UnloggedCustomerSearchJobTest
+    - Tests could be run on Selenium Grid:
+        -DgridUrl=...
         
 ##Execution commands examples:
     1) java -jar AkamaiTestFramework.jar --> executes default suite and default browser
     2) java -jar -Dbrowser=firefox AkamaiTestFramework.jar --> executes default suite on FIREFOX
     3) java -jar -Dbrowser=edge -Dtests=NoJobsFoundNotificationTest AkamaiTestFramework.jar --> executes NoJobsFoundNotificationTest on EDGE
+    4) java -jar -DgridUrl=http://localhost:4444/wd/hub AkamaiTestFramework.jar --> executes default suite and default browser on Selenium Grid
 </pre>
