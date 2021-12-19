@@ -82,7 +82,8 @@ public class TestsRunner {
 
     private static void shutDownBrowser(AnnotationConfigApplicationContext ctx) {
         log.info("ShutDown Browser...");
-        ((WebDriver) ctx.getBean("driver")).quit();
+        WebDriver webDriver = ((WebDriver) ctx.getBean("driver"));
+        webDriver.quit();
     }
 
     private static void setupLogger(AnnotationConfigApplicationContext ctx) {
